@@ -15,7 +15,7 @@ def play_sound():
     sound.play();
 
     # loop while the sound is playing
-    while sound.status == sf.Sound.PLAYING:
+    while sound.status == sf.Status.PLAYING:
         # leave some CPU time for other processes
         sf.sleep(sf.milliseconds(100))
 
@@ -33,7 +33,7 @@ def play_music():
     music.play();
 
     # loop while the music is playing
-    while music.status == sf.Music.PLAYING:
+    while music.status == sf.Status.PLAYING:
         # leave some CPU time for other processes
         sf.sleep(sf.milliseconds(100))
 
